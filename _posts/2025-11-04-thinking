@@ -1,0 +1,5 @@
+1. unified command descriptor
+2. cq에는 npu 실행 결과 값이 있어야 함. 실행 시간, 온도 등
+3. Barrier가 필요한가?
+4. Profiler를 위한 요소 정의
+5. muliti thread/process -> 각 스레드별/프로세스별 별도 큐
