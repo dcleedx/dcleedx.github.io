@@ -1,6 +1,44 @@
+# ─────────────────────────────────────────────
 title: "블로그 제목A"
-theme: minima
+description: "이동철의 기술·일상 블로그"     # 추가: 사이트 설명
 url: "https://dcleedx.github.io"
-baseurl: ""           # 유저 페이지는 빈 값 권장
+baseurl: ""              # 사용자 페이지일 때 빈값 권장
+
+# 테마 설정
+theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
+
+# 소셜/메타 정보 (선택)
+author:
+  name: "이동철"
+  email: "your-email@example.com"
+
+# 기본 언어 및 인코딩
+lang: ko
+charset: utf-8
+
+# 플러그인
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag        # SEO 태그 지원
+  - jekyll-sitemap        # 사이트맵 생성 (선택)
+
+# Markdown 설정
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# 빌드 시 경로 문제 예방
+# (필요 시 아래를 추가)
+# exclude: ["Gemfile", "Gemfile.lock", "node_modules"]
+
+# 퍼머링크 (링크 구조)
+permalink: /:year/:month/:day/:title/
+
+# 홈페이지 포스트 수 제한 (Minimal-Mistakes용)
+paginate: 5
+paginate_path: "/page:num/"
+
+# 기타 설정
+theme_coupon: false      # Minimal-Mistakes 옵션 예시
+# ─────────────────────────────────────────────
